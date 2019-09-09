@@ -14,11 +14,7 @@ class Events
   end
 
   def available_seats
-
-  end
-
-  def date
-    
+    all['available_seats']
   end
 
   def all
