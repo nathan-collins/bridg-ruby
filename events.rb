@@ -13,6 +13,10 @@ class Events
     @record = JSON.parse(resp.body) if resp.is_a?(Net::HTTPSuccess)
   end
 
+  def available_seats
+    all['available_seats']
+  end
+
   def all
     @record['events']
   end
